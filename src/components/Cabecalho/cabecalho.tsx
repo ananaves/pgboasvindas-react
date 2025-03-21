@@ -1,9 +1,11 @@
 import estilo from './cabecalho.module.css';
+import logotipo from '../../assets/logotipo.png';
+
 
 function Cabecalho() {
     return(
         <header className={estilo.cabecalho}>
-            <h1>logo</h1>
+            <img src={logotipo} alt="logotipo" />
             <a href="#">login</a>
         </header>
     );
