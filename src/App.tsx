@@ -1,12 +1,12 @@
 import './App.css'
-import PHome from './assets/Pages/PHome/PHome';
+import AppRoutes from './routes';
 
 function App() {
   return(
     <>
-      <PHome/>
+     <AppRoutes/>
     </>
-  )
+  );
 }
 
 export default App;
