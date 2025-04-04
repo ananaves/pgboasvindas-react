@@ -1,6 +1,8 @@
-const APP_ROUTES = {
+export const APP_ROUTES = {
     ROUTE_HOME:'/',
     ROUTE_LOGIN:'/login'
 }
 
-export {APP_ROUTES}
+export const SERVER_CFG = {
+    SERVER_URL: 'http://localhost:3333'
+}
