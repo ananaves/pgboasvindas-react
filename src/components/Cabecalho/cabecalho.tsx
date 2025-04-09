@@ -10,6 +10,9 @@ function Cabecalho() {
                 className='logoImg'>
                 <img src={logotipo} alt="logotipo" />
             </a>
+            <a href={APP_ROUTES.ROUTE_TABALUNO}>Abrir tabela alunos</a>
+            <a href={APP_ROUTES.ROUTE_TABLIVRO}>Abrir tabela livros</a>
+            <a href={APP_ROUTES.ROUTE_TABEMPRESTIMO}>Abrir tabela emprestimos</a>
             <a href={APP_ROUTES.ROUTE_LOGIN}>login</a>
         </header>
     );
