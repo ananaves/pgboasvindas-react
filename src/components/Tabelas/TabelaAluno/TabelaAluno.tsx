@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import AlunoRequests from '../../fetch/AlunoRequests';
+import AlunoRequests from '../../../fetch/AlunoRequests';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';

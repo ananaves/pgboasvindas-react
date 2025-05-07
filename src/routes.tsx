@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import PHome from "./assets/Pages/PHome/PHome";
-import PLogin from "./assets/Pages/PLogin/PLogin";
-import PAlunos from "./assets/Pages/PAlunos/PAlunos";
-import PLivros from "./assets/Pages/PLivros/PLivros";
-import PEmprestimos from "./assets/Pages/PEmprestimos/PEmprestimos";
+import PHome from "./Pages/PHome/PHome";
+import PLogin from "./Pages/PLogin/PLogin";
+import PAlunos from "./Pages/PAlunos/PAlunos";
+import PLivros from "./Pages/PLivros/PLivros";
+import PEmprestimos from "./Pages/PEmprestimos/PEmprestimos";
 import { APP_ROUTES } from "./appConfig";
 
 

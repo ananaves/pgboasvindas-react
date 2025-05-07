@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import LivroRequests from '../../fetch/LivroRequests';
+import LivroRequests from '../../../fetch/LivroRequests';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';

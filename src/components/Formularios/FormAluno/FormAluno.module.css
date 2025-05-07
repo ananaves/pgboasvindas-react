@@ -1,0 +1,66 @@
+
+.formSection {
+    width: 90%;
+    max-width: 600px;
+    background-color: var(--cor-primaria);
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.formSection h3 {
+    color: var(--branco-suave);
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.formLogin {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formLogin label {
+    color: var(--branco-suave);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.formLogin input[type="text"],
+.formLogin input[type="email"],
+.formLogin input[type="number"],
+.formLogin input[type="date"] {
+    margin-top: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--cinza);
+    transition: border 0.3s;
+}
+
+.formLogin input[type="text"]:focus,
+.formLogin input[type="email"]:focus,
+.formLogin input[type="number"]:focus,
+.formLogin input[type="date"]:focus {
+    outline: none;
+    border: 2px solid;
+}
+
+.inputButton {
+    width: fit-content;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--branco-suave);
+    color: var(--cor-primaria);
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
