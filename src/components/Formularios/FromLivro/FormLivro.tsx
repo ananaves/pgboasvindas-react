@@ -1,18 +1,17 @@
-import { useState } from "react";
+import { JSX, useState } from "react";
 import estilo from "./FormLivros.module.css"
 
-function FormLivros() {
+function FormLivros(): JSX.Element {
 
     const [formDate, setFormDate] = useState({
         titulo: '',
         autor: '',
         editora: '',
-        anoPublucacao: '',
+        anoPublicacao: 0,
         isbn: '',
-        quantTotal: '',
-        quantDisponivel: '',
-        valorAquisicao: '',
-        statusLivroEmprestado: ''
+        quantTotal: 0,
+        quantDisponivel: 0,
+        valorAquisicao: 0
     });
 
 
@@ -61,11 +60,12 @@ function FormLivros() {
                     />
                 </label>
                 <label htmlFor="">
-                    Ano de Publicação
+                    Ano Publicação
                     <input 
-                        type="date"                                      
-                        name="anoPublicacao"                                        
-                        id="anoPublicacao-livro"                                                                              
+                        type="date" 
+                        name="anoPublicacao" 
+                        id="anoPublicacao"
+                        required 
                         onChange={(e) => handleChange("anoPublicacao", e.target.value)}
                     />
                 </label>
@@ -82,22 +82,22 @@ function FormLivros() {
                 <label htmlFor="">
                     Quantidade Total
                     <input 
-                        type="number"                                                     //tipo do input
-                        name="quantTotal"                                                     //nome do input
-                        id="quant-total-livro"                                                  // id do input
-                        required                                                        // quando é OBRIGATORIO
-                        minLength={1}                                                   //minimo de caracteres
+                        type="number" 
+                        name="quantTotal" 
+                        id="quantTotal"
+                        required 
+                        minLength={0}
                         onChange={(e) => handleChange("quantTotal", e.target.value)}
                     />
                 </label>
                 <label htmlFor="">
-                    Quantidade Disponível
+                    Quantidade Disponivel
                     <input 
-                        type="number"                                                     //tipo do input
-                        name="quantDisponivel"                                                     //nome do input
-                        id="quant-disponivel-livro"                                                  // id do input
-                        required                                                        // quando é OBRIGATORIO
-                        minLength={1}                                                   //minimo de caracteres
+                        type="number" 
+                        name="quantDisponivel" 
+                        id="quantoDisponivel"
+                        required 
+                        minLength={0}
                         onChange={(e) => handleChange("quantDisponivel", e.target.value)}
                     />
                 </label>
@@ -106,21 +106,12 @@ function FormLivros() {
                     <input 
                         type="number" 
                         name="valorAquisicao" 
-                        id="vAqs-livro"
-                        minLength={3}
+                        id="va-livro"
+                        step={0.01}
                         onChange={(e) => handleChange("valorAquisicao", e.target.value)}
                     />
                 </label>
-                <label htmlFor="">
-                    Status Livro Emprestado
-                    <input 
-                        type="text" 
-                        name="statusLivroEmprestado" 
-                        id="stts-livro-emprest"
-                        minLength={3}
-                        onChange={(e) => handleChange("statusLivroEmprestado", e.target.value)}
-                    />
-                </label>
+
 
                 <input className={estilo.inputButton} type="submit" value="CADASTRAR LIVRO" />    {/*submit significa "enviar", ou seja, irá usar ele para enviar os dados a API */}
 
